@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang = 'en-US'>
+  <head>
+    <meta charset = "utf-8" />
+    <style>
+      h1 {text-align: center;
+          color:white;
+      }
+      h2{
+        color:white;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color:white;
+      }
+      div {
+        margin-right: 150px;
+        margin-left:150px;
+        font-size:25px;
+        color:white;
+      }
+      code {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Consolas, "courier new";
+        color: crimson;
+        padding:2px;
+        font-size:105%
+      }
+      a:link, a:visited{
+        background-color:#00bfff;
+        color:white;
+        padding:15px 25px;
+        text-align:center;
+        text-decoration:none;
+        display:inline-block;
+      }
+      a:hover, a:active{
+        background-color:#0040ff;
+      }
+    </style>
+    <link rel = "icon" href = "IMG_5145.PNG">
+  </head>
+<!--start of website-->
+  <body style = "background-color:rgb(4, 0, 76)">
+    <h1> <b> Coding in Python </b> </h1>
+    <img title = "python app logo"
+    src = "https://banner2.cleanpng.com/20180412/kye/kisspng-python-programming-language-computer-programming-language-5acfdc3636bac7.8891188615235717662242.jpg"
+    alt = "python app logo"
+    width = 200 height = 200>
+    <a href = "#basics">Jump to Python Basics</a> <br>
+    <!--intro-->
+    <h1>Introduction</h1>
+    <div>
+      Python is a user-friendly programming language
+      that uses built-in functions and libraries in order to complete a variety
+      of tasks. In fact, Python is not <em>only</em> built to create any one
+      task. The Python official website states that:
+      <blockquote cite = "https://www.python.org/doc/essays/blurb/">
+        Python's simple, easy to learn syntax emphasizes readability and therefore
+        reduces the cost of program maintenance. Python supports modules and
+        packages, which encourages program modularity and code reuse. The Python
+        interpreter and the extensive standard library are available in source or
+        binary form without charge for all major platforms, and can be freely
+        distributed.
+      </blockquote>
+      In this tutorial, we will review some of the basic Python functions and
+      their uses as well as some prominent Python libraries you can incorporate
+      into your code.
+    </div>
+    <hr>
+    <!--major heading-->
+    <h1 id = "basics">Basics</h1>
+    <a href = "#print">Jump to Print</a> <br>
+    <a href = "#input">Jump to Input</a> <br>
+    <a href = "#type">Jump to Type</a> <br>
+    <a href = "#for">Jump to For Loop</a> <br>
+<!--first section-->
+    <h2 id = "print">Print</h2>
+    <div>
+      The print statement is one of the most simple Python commands: <br>
+      <!--makes a box around the code-->
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Input: <br><br>print("Hello World")
+        </code>
+      </div>
+      This code simply returns:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Output: <br><br>Hello World
+        </code>
+      </div>
+      You can also add variables to your print statements. For instance:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Input: <br><br>
+          x = 2 + 3 <br>
+          print("2 + 3 = " + x)
+        </code>
+      </div>
+      Returns:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Output: <br><br>2 + 3 = 5
+        </code>
+      </div>
+      Finally, you can also create an <em>f-string</em>, putting your variables into
+      brackets instead of using the <em>+</em> sign. This is especially useful when you
+      have a lot of variables in one line:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Input: <br><br>
+          y = 2
+          z = 3
+          x = y + z <br>
+          print(f"{y} + {z} = {x}")
+        </code>
+      </div>
+      Returns:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Output: <br><br>2 + 3 = 5
+        </code>
+      </div>
+    </div>
+    <!--second section-->
+    <h2 id = "input">Input</h2>
+    <div>
+      The input function is relatively similar to the <em>print</em> function,
+      but it asks the user for an answer:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Input: <br><br>input("What is your favorite color?")
+        </code>
+      </div>
+
+    <!--third section-->
+    <h2 id = "type">Type</h2>
+    <!--fourth section-->
+    <h2 id = "for">For Loops</h2>
+    <div> <a href = "https://www.google.com/"> google</a></div>
+  </body>
+  </html>
