@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = 'en-US'>
   <head>
-    <meta charset = "utf-8" />
+    <meta charset = "UTF-8" />
     <style>
       h1 {text-align: center;
           color:white;
@@ -29,7 +29,7 @@
         padding:2px;
         font-size:105%
       }
-      a:link, a:visited{
+      a.btn:link, a.btn:visited{
         background-color:#00bfff;
         color:white;
         padding:15px 25px;
@@ -37,8 +37,18 @@
         text-decoration:none;
         display:inline-block;
       }
-      a:hover, a:active{
+      a.btn:hover, a.btn:active{
         background-color:#0040ff;
+      }
+      a.lnk:link, a.lnk:visited{
+        color:white;
+        background-color:none;
+        text-decoration:underline;
+      }
+      a.lnk:hover, a.lnk:active{
+        color:yellow;
+        background-color:none;
+        text-decoration:underline;
       }
       table, th, td{
         border: 1px solid white
@@ -48,13 +58,13 @@
   </head>
 <!--start of website-->
   <body style = "background-color:rgb(4, 0, 76)">
-    <h1> <b> Coding in Python </b> </h1>
+    <h1> <strong> Coding in Python </strong> </h1>
     <img title = "python app logo"
     src = "https://banner2.cleanpng.com/20180412/kye/kisspng-python-programming-language-computer-programming-language-5acfdc3636bac7.8891188615235717662242.jpg"
     alt = "python app logo"
     width = 200 height = 200>
-    <a href = "#basics">Jump to Python Basics</a> <br>
-    <a href = "#seplibs">Jump to Separate Python Libraries</a> <br>
+    <a class = "btn" href = "#basics">Jump to Python Basics</a> <br>
+    <a class = "btn" href = "#seplib">Jump to Separate Python Libraries</a> <br>
     <!--intro-->
     <h1>Introduction</h1>
     <div>
@@ -81,12 +91,12 @@
       </ol>
     </div>
     <hr>
-    <!--major heading-->
+    <!--major heading-functions-->
     <h1 id = "basics">Basics</h1>
-    <a href = "#print">Jump to Print</a> <br>
-    <a href = "#input">Jump to Input</a> <br>
-    <a href = "#type">Jump to Type</a> <br>
-    <a href = "#for">Jump to For Loop</a> <br>
+    <a class = "btn" href = "#print">Jump to Print</a> <br>
+    <a class = "btn" href = "#input">Jump to Input</a> <br>
+    <a class = "btn" href = "#type">Jump to Type</a> <br>
+    <a class = "btn" href = "#for">Jump to For Loop</a> <br>
 <!--first section-->
     <h2 id = "print">Print</h2>
     <div>
@@ -311,7 +321,39 @@
         </code>
       </div>
     </div>
+    <!--major heading-libraries-->
     <h1 id = "seplib">Separate Python Libraries</h1>
-    <div> <a href = "https://www.google.com/"> google</a></div>
+    <div>
+      Here is a list of several python libraries as well as links and descriptions for further exploration:
+      <div>
+        <p> <a class = "lnk" href = "https://docs.python.org/3/library/math.html" target = "_blank"> math</a></p>
+        <ul style = list-style-type:disc;>
+          <li>Can execute more complicated mathematical calculations</li>
+          <li>Can round and find absolute values</li>
+          <li>Can get exact values for irrational numbers like &#120587;</li>
+      </div>
+      <div>
+        <p> <a class = "lnk" href = "https://docs.python.org/3/library/pprint.html" target = "_blank"> pprint</a></p>
+        <ul style = list-style-type:disc;>
+          <li>Means "Pretty Print"</li>
+          <li>Can format otherwise hard-to-read objects</li>
+          <li>Can let you format a complicated object in specific way (margins, etc)</li>
+      </div>
+      <div>
+        <p> <a class = "lnk" href = "https://numpy.org/" target = "_blank"> numpy</a></p>
+        <ul style = list-style-type:disc;>
+          <li>Multifunctional python library that draws on languages like C</li>
+          <li>Can create n-dimensional arrays with indexing and vectorization</li>
+          <li>Works best alongside other data science-based libraries such as
+          <a class = "lnk" href = "https://pandas.pydata.org/" target = "_blank"> pandas</a></li> and
+          <a class = "lnk" href = "https://seaborn.pydata.org/" target = "_blank"> seaborn</a>
+      </div>
+    </div>
+    <!--conclusion-->
+    <h1>Conclusion</h1>
+    <div>
+      In conclusion, Python is an incredibly useful coding language that has a multitude
+      of libraries adding extensions to its different uses. Happy coding!
+    </div>
   </body>
   </html>
