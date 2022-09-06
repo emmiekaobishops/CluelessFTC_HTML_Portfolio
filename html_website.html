@@ -40,6 +40,9 @@
       a:hover, a:active{
         background-color:#0040ff;
       }
+      table, th, td{
+        border: 1px solid white
+      }
     </style>
     <link rel = "icon" href = "IMG_5145.PNG">
   </head>
@@ -51,6 +54,7 @@
     alt = "python app logo"
     width = 200 height = 200>
     <a href = "#basics">Jump to Python Basics</a> <br>
+    <a href = "#seplibs">Jump to Separate Python Libraries</a> <br>
     <!--intro-->
     <h1>Introduction</h1>
     <div>
@@ -68,7 +72,13 @@
       </blockquote>
       In this tutorial, we will review some of the basic Python functions and
       their uses as well as some prominent Python libraries you can incorporate
-      into your code.
+      into your code:
+      <ol>
+        <li>Print</li>
+        <li>Input</li>
+        <li>Type</li>
+        <li>For Loop</li>
+      </ol>
     </div>
     <hr>
     <!--major heading-->
@@ -147,7 +157,7 @@
     <!--second section-->
     <h2 id = "input">Input</h2>
     <div>
-      The input function is relatively similar to the <em>print</em> function,
+      The <em>input</em> function is relatively similar to the <em>print</em> function,
       but it asks the user for an answer:
       <div
       style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
@@ -190,8 +200,118 @@
 
     <!--third section-->
     <h2 id = "type">Type</h2>
+    <div>
+      The <em>type</em> function simply returns the type of an object. Objects
+      can have several different types, and here are some of the most common:<br>
+      <table style="width:100%">
+        <tr>
+          <th>Type</th>
+          <th>Abbreviation</th>
+          <th style="width:50%">Explanation</th>
+          <th>Examples</th>
+        </tr>
+        <!--string-->
+        <tr>
+          <td>String</td>
+          <td>str</td>
+          <td>Can be anything but will not possess any special qualities. For instance,
+          one cannot add '1' and '2' if they are both strings; they must be converted to
+         integers.</td>
+          <td>'Hello World', '1', '0.3'</td>
+        </tr>
+        <!--integer-->
+        <tr>
+          <td>Integer</td>
+          <td>int</td>
+          <td>Any whole number; can be added, multiplied, etc. in equations</td>
+          <td>-5, 0, 100</td>
+        </tr>
+        <!--float-->
+        <tr>
+          <td>Float</td>
+          <td>float</td>
+          <td>Any decimal; possesses the same characteristics as int</td>
+          <td>-6.12, 0.324, 3.1415</td>
+        </tr>
+        <!--list-->
+        <tr>
+          <td>List</td>
+          <td>list</td>
+          <td>A group of objects contained in square brackets and separated by commas</td>
+          <td>['Hello', 9, 0.1, True]</td>
+        </tr>
+        <!--dictionary-->
+        <tr>
+          <td>Dictionary</td>
+          <td>dict</td>
+          <td>Similar to a list but organizes elements in key:value pairs; also uses curly brackets.</td>
+          <td>{'First':'Bob', 'Last':'Smith', 'Age':35}</td>
+        </tr>
+      </table>
+      You can simply find the type of an object by using type():
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Input: <br><br>type('Hello')
+        </code>
+      </div>
+      This returns:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Output: <br><br>str
+        </code>
+      </div>
+    </div>
     <!--fourth section-->
     <h2 id = "for">For Loops</h2>
+    <div>
+      Finally, for loops are the best way to complete repeated tasks with few lines
+      of code:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Input: <br><br>for i in range(5):
+          <pre>    print(i)</pre>
+        </code>
+      </div>
+      This returns:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Output: <br>1<br>2<br>3<br>4<br>5
+        </code>
+      </div>
+      For loops can be used to loop through different values. You can also use
+      if statements when writing for loops:
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Input: <br>for i in range(15): <br>
+          <pre>    if i % 5 == 0:</pre>
+            <pre>        print(i)</pre>
+        </code>
+      </div>
+      <div
+      style = "border:1px solid white; margin-top:100px; margin-bottom:100px;
+      margin-right:auto; margin-left:auto; background-color:#f1f1f1;
+      padding:25px">
+        <code>
+          #Output: <br>5<br>10<br>15
+        </code>
+      </div>
+    </div>
+    <h1 id = "seplib">Separate Python Libraries</h1>
     <div> <a href = "https://www.google.com/"> google</a></div>
   </body>
   </html>
