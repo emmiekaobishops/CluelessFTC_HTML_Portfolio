@@ -1,6 +1,1 @@
-# HTML
----
-Here are the extra elements of my website:
-1. Work with CSS for the box formatting and mock code
-
-    a. ex. The font, spacing, padding, and color of the code boxes
+This website uses both HTML and CSS to format a Python tutorial. It uses different CSS elements like buttons and links to make the page more user-friendly.
